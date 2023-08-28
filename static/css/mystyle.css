@@ -1,9 +1,18 @@
 body, #wrapper{
-    display: flex;
+    /*display: flex;*/
+    <!-- bodyと＃wrapper要素をフレックスコンテナとして表示する -->
     flex-direction: column;
+    <!-- 子要素を縦方向に配置する。これにより子要素が上から下に積み重なる -->
     min-height: 100vh;
+    <!-- ＃wrapper要素を少なくともビューポートの高さに設定し、画面が小さい場合でもページ全体が表示されるようにする -->
 }
 
-footer{
-    margin-top:auto;
+footer {
+    margin-top: auto;
+    <!-- 最下部にfooterを固定する -->
+}
+
+.my-div-style{
+    margin-top: 6rem;
+    <!-- my-div-styleクラスを持つ要素の上側に６リマインのマージン（スペース）を設定する。 -->
 }

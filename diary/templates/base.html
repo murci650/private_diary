@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -30,9 +30,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container px-5">
             <a class="navbar-brand" href="{% url 'diary:index' %}">PRIVATE DIARY</a><!-- 8--><!-- ナビゲーションバーに表示するPRIVATE DIARYにトップページへのリンクを貼る。urlタグでURLの逆引き。diary:indexはdiaryアプリのurls.pyでindexという名前のルーティングを参照する意味-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false aria-lebel="Toggle navigation">
-<span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"id="navbarResponsive">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link {% block active_inquiry %}{% endblock %}" href="{% url 'diary:inquiry' %}">INQUIRY</a><!-- 9--><!-- ナビゲーションバーのリンクがクリックされると文字色を変えてアクティブにしている見た目を出すBootstrapによる効果を出すためのblockタグを使う。各ページのテンプレートでactiveというテキストを埋め込みこれを実現する--><!--ナビゲーションバーのINQUIRYリンクのhref属性に問い合わせページへのリンクを記述する-->
@@ -43,7 +42,7 @@
                         <a class="nav-link" href="#">Sign Up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log in</a>
+                        <a class="nav-link" href="#">Log In</a>
                     </li>
                 </ul>
             </div>
